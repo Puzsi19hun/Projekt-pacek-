@@ -13,7 +13,8 @@ let numhere6 = 0
 let numhere7 = 0
 let numhere8 = 0
 let body = document.querySelector('body');
-
+let osszeg = 0
+let szd = 0
 let fizethet = false
 
 let elso1 = false
@@ -41,32 +42,22 @@ closeasd.addEventListener('click', () => {
 
 
 
-function initApp(key) {
-    products.forEach((value, key))
-    {
-        let newDiv = document.createElement("div")
-        newDiv.classList.add('item')
-        newDiv.innerHTML = `<img src="assets/imagies/${value.img}"
-        <div class="nev">${value.nev}</div>
-        <div class="ar">${value.price.toLocaleString()} ft</div>
-        <button onclick = "addToCard(${key})">Kosárba</button>}`;
-        list.appendChild(newDiv)
-    }
-}
-function addToCard(key) {
-    if (listCards[key] == null) {
-        listCards[key] = JSON.parse(JSON.stringify(products[key]));
-        listCards[key].quantity = 1;
-    }
-    reloadCard();
-}
 
+
+function check() {
+    if (document.getElementById("check").checked) {
+        document.getElementById("eltun").style.display = "none"
+    }
+    else {
+        document.getElementById("eltun").style.display = "block"
+    }
+}
 
 function kosarba(id) {
-    
-   
 
-    
+
+
+
     if (id == "egy") {
         num = Number(num) + Number(document.getElementById(1).value)
         numhere1 = Number(numhere1) + Number(document.getElementById(1).value)
@@ -171,16 +162,26 @@ function kosarba(id) {
     }
 
     if (fizethet) {
-        document.getElementById("fiz").style.color="white";
-        document.getElementById("fiz").style.cursor="pointer";
+        document.getElementById("fiz").style.color = "white";
+        document.getElementById("fiz").style.cursor = "pointer";
 
         openfiz.addEventListener('click', () => {
             body.classList.add('asd2');
         })
     }
-    
+
     bezarfiz.addEventListener('click', () => {
         body.classList.remove('asd2');
     })
+
+    osszeg = num * 2000
+    if(osszeg >= 20000)
+    {
+        document.getElementById("szd").innerHTML = 1699+"Ft"
+    }
+    else{
+        document.getElementById("szd").innerHTML = 0+"Ft"
+    }
+    
 
 }

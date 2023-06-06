@@ -17,10 +17,10 @@
    <link rel="stylesheet" href="css/animate-wow.css">
    <!--main css-->
    <link rel="stylesheet" href="css/style.css">
-   
+
    <link rel="stylesheet" href="css/slick.min.css">
    <!--responsive css-->
-   
+
 </head>
 
 <body>
@@ -35,15 +35,15 @@
                         data-target="#navbar" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                      </button>
-                     
+
                   </div>
 
                </div>
                <div class="right-nav">
-                  
+
                   <p id="db">0</p>
                   <img class="kocsi" src="images/kocsi.png" alt="">
-                  
+
 
 
 
@@ -89,18 +89,56 @@
             <p id="nyolcadik"></p>
          </div>
          <h2 class="bezar">Mégsem</h2>
-         <h2 id="fiz" class="fizetes" >Fizetés</h2>
+         <h2 id="fiz" class="fizetes">Fizetés</h2>
       </div>
    </div>
 
    <div class="fiz">
       <div class="container">
          <div>
-            <h2 class="bezar2">Mégsem</h2>
+            <div class="col-md-6">
+               <p><input type="text" placeholder="Név " name="" id=""></p>
+               <p><input type="text" placeholder="Irányitószám" name="" id=""> <input type="text"
+                     placeholder="Település" name="" id=""></p>
+               <p><input type="text" placeholder="Utca, házszám" name="" id=""></p>
+               <p><input type="text" placeholder="E-mail" name="" id=""> <input type="text" placeholder="Telefon"
+                     name="" id=""></p>
+            </div>
+            <div class="col-md-6">
+               <div id="eltun">
+                  <p><input type="text" placeholder="Név " name="" class="eltun"></p>
+                  <p><input type="text" placeholder="Irányitószám" name="" class="eltun"> <input type="text"
+                        placeholder="Település" name="" class="eltun"></p>
+               </div>
+               <p> Megegyezik a számlázási címmel <input type="checkbox" onchange="check()" name="" id="check"></p>
+
+            </div>
+            
+            <div>
+               
+               <br>
+               <div class="marg col-md-6">
+                  <h1 >Fizetés</h1>
+                  <br>
+                  <p><input id="radio1" type="radio" name="fizet"> Utánvét (490 Ft)</p>
+                  <p><input id="radio2" type="radio" name="fizet"> Kártyás fizetés</p>
+                  <p><input id="radio3" type="radio" name="fizet"> Banki átutalás</p>
+
+                  <p>Szállitási díj: <span id="szd"></span></p>
+
+                  <p> <h2 class="bezar2">Mégsem</h2> <h2 onclick="megrendel()" class="megrendel">Megrendelés</h2></p>
+               </div>
+              
+            
+            </div>
+               
+
+
+            
          </div>
       </div>
    </div>
-   
+
 
    <div class="page-content-product">
       <div class="main-product">
@@ -115,8 +153,8 @@
                   <div class="box-img">
                      <h4>Cigány gyerek</h4>
                      <img src="images/product/1.jpg" alt="" />
-                     <p><input type="number" name="" id="1"> <button id="egy" onclick="kosarba(this.id)"><img class="gombkocsi" src="images/kocsi.png"
-                              alt=""></button></p>
+                     <p><input type="number" name="" id="1"> <button id="egy" onclick="kosarba(this.id)"><img
+                              class="gombkocsi" src="images/kocsi.png" alt=""></button></p>
                      <p class="ar">2000 Ft</p>
                   </div>
                </div>
@@ -124,8 +162,8 @@
                   <div class="box-img">
                      <h4>Puzsi Pack (5KG)</h4>
                      <img src="images/product/2.png" alt="" />
-                     <p><input type="number" name="" id="2"> <button id="ketto" onclick="kosarba(this.id)"><img class="gombkocsi" src="images/kocsi.png"
-                              alt=""></button></p>
+                     <p><input type="number" name="" id="2"> <button id="ketto" onclick="kosarba(this.id)"><img
+                              class="gombkocsi" src="images/kocsi.png" alt=""></button></p>
                      <p class="ar">2000 Ft</p>
                   </div>
 
@@ -134,8 +172,8 @@
                   <div class="box-img">
                      <h4>Masszázs</h4>
                      <img src="images/product/3.png" alt="" />
-                     <p><input type="number" name="" id="3"> <button id="harom" onclick="kosarba(this.id)"><img class="gombkocsi" src="images/kocsi.png"
-                              alt=""></button></p>
+                     <p><input type="number" name="" id="3"> <button id="harom" onclick="kosarba(this.id)"><img
+                              class="gombkocsi" src="images/kocsi.png" alt=""></button></p>
                      <p class="ar">2000 Ft</p>
                   </div>
                </div>
@@ -143,8 +181,8 @@
                   <div class="box-img">
                      <h4>Személyi edzés</h4>
                      <img src="images/product/4.jpg" alt="" />
-                     <p><input type="number" name="" id="4"> <button id="negy" onclick="kosarba(this.id)"><img class="gombkocsi" src="images/kocsi.png"
-                              alt=""></button></p>
+                     <p><input type="number" name="" id="4"> <button id="negy" onclick="kosarba(this.id)"><img
+                              class="gombkocsi" src="images/kocsi.png" alt=""></button></p>
                      <p class="ar">2000 Ft</p>
                   </div>
                </div>
@@ -152,8 +190,8 @@
                   <div class="box-img">
                      <h4>Fejvadász</h4>
                      <img src="images/product/5.jpg" alt="" />
-                     <p><input type="number" name="" id="5"> <button id="ot" onclick="kosarba(this.id)"><img class="gombkocsi" src="images/kocsi.png"
-                              alt=""></button></p>
+                     <p><input type="number" name="" id="5"> <button id="ot" onclick="kosarba(this.id)"><img
+                              class="gombkocsi" src="images/kocsi.png" alt=""></button></p>
                      <p class="ar">2000 Ft</p>
                   </div>
                </div>
@@ -161,8 +199,8 @@
                   <div class="box-img">
                      <h4>Milka csokoládé</h4>
                      <img src="images/product/6.jpg" alt="" />
-                     <p><input type="number" name="" id="6"> <button id="hat" onclick="kosarba(this.id)"><img class="gombkocsi" src="images/kocsi.png"
-                              alt=""></button></p>
+                     <p><input type="number" name="" id="6"> <button id="hat" onclick="kosarba(this.id)"><img
+                              class="gombkocsi" src="images/kocsi.png" alt=""></button></p>
                      <p class="ar">2000 Ft</p>
                   </div>
                </div>
@@ -170,8 +208,8 @@
                   <div class="box-img">
                      <h4>Szállás</h4>
                      <img src="images/product/7.jpg" alt="" />
-                     <p><input type="number" name="" id="7"> <button id="het" onclick="kosarba(this.id)"><img class="gombkocsi" src="images/kocsi.png"
-                              alt=""></button></p>
+                     <p><input type="number" name="" id="7"> <button id="het" onclick="kosarba(this.id)"><img
+                              class="gombkocsi" src="images/kocsi.png" alt=""></button></p>
                      <p class="ar">2000 Ft</p>
                   </div>
                </div>
@@ -179,8 +217,8 @@
                   <div class="box-img">
                      <h4>Ebéd</h4>
                      <img src="images/product/8.jpg" alt="" />
-                     <p><input type="number" name="" id="8"> <button id="nyolc" onclick="kosarba(this.id)"><img class="gombkocsi" src="images/kocsi.png"
-                              alt=""></button></p>
+                     <p><input type="number" name="" id="8"> <button id="nyolc" onclick="kosarba(this.id)"><img
+                              class="gombkocsi" src="images/kocsi.png" alt=""></button></p>
                      <p class="ar">2000 Ft</p>
                   </div>
                </div>
@@ -189,7 +227,7 @@
       </div>
    </div>
 
-   
+
 
 
 </body>
