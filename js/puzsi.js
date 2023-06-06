@@ -26,7 +26,7 @@ let openfiz = document.querySelector(".fizetes")
 let bezarfiz = document.querySelector(".bezar2")
 
 let egy = document.getElementsByClassName("egy").value
-
+utanvet = false
 
 
 
@@ -36,7 +36,6 @@ openasd.addEventListener('click', () => {
 closeasd.addEventListener('click', () => {
     body.classList.remove('asd');
 })
-
 
 
 
@@ -177,11 +176,32 @@ function kosarba(id) {
     osszeg = num * 2000
     if(osszeg >= 20000)
     {
+        szd = 1699
         document.getElementById("szd").innerHTML = 1699+"Ft"
     }
     else{
+        szd = 0
         document.getElementById("szd").innerHTML = 0+"Ft"
     }
+
+    
     
 
+}
+
+function radio()
+{
+    if(document.getElementById("asd").checked)
+    {
+        document.getElementById("osszeg").innerHTML = (num * 2000) + szd + 490 + "Ft"
+    }
+    else{
+        document.getElementById("osszeg").innerHTML = (num * 2000) + szd + "Ft"
+    }
+}
+
+function megrendel()
+{
+    alert("Köszönjük a rendelést!")
+    location.reload()
 }

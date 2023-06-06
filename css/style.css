@@ -726,9 +726,9 @@ header .navbar-default .navbar-header {
 	/* background: #f4f9fd; */
 	background: #183350;
 	padding: 20px 0px;
-	width: 1000px;
+	width: 800px;
 	left: 100%;
-	height: 600px;
+	height: 500px;
 	position: absolute;
 	transition: 0.5s;
 	z-index: 10;
@@ -790,15 +790,22 @@ header .navbar-default .navbar-header {
 	margin-right: 35%;
 }
 
+
 input
 {
 	color: black;
 }
 
+#megrendel
+{
+	margin-left: 720px;
+	cursor: pointer;
+}
+
 .bezar2 {
 	position: absolute;
 	cursor: pointer;
-	margin-top: 10%;
+	margin-top: 8%;
 	float: right;
 	margin-right: 35%;
 
