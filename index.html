@@ -5,6 +5,8 @@
    <meta charset="UTF-8">
    <title>Bolt</title>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" href="css/bootstrap-select.min.css">
+   <link rel="stylesheet" href="css/responsive.css">
    <!--enable mobile device-->
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <!--fontawesome css-->
@@ -15,10 +17,10 @@
    <link rel="stylesheet" href="css/animate-wow.css">
    <!--main css-->
    <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/bootstrap-select.min.css">
+   
    <link rel="stylesheet" href="css/slick.min.css">
    <!--responsive css-->
-   <link rel="stylesheet" href="css/responsive.css">
+   
 </head>
 
 <body>
@@ -36,15 +38,23 @@
                      <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="" /></a>
 
                   </div>
-                  
+
                </div>
                <div class="right-nav">
-                  <img class="kocsi" src="images/kocsi.png" alt="">
-                </div>
+
+                  <p class="db">0<img class="kocsi" src="images/kocsi.png" alt=""></p>
+
+
+
+
+               </div>
             </div>
+
+
+         </div>
          </div>
 
-         
+
 
          <!--/.container-fluid -->
       </nav>
@@ -62,8 +72,15 @@
          </div>
       </div>
    </div>
-   <div id="sidebar" class="top-nav">
+
+   <div class="szallitas">
+      <div class="container">
+         <h1>Kosár</h1>
+         <p id="ide"></p>
+         <h2 class="bezar">Mégsem</h2>
+      </div>
    </div>
+
    <div class="page-content-product">
       <div class="main-product">
          <div class="container">
@@ -75,118 +92,96 @@
             <div class="row clearfix">
                <div class="col-lg-3 col-sm-6 col-md-3">
                   <div class="box-img">
-                     <h4>Product</h4>
+                     <h4>1</h4>
                      <img src="images/product/1.png" alt="" />
+                     <p><input type="text" class="egy" name="" id="1"> <button onclick="kosarba(id)"><img class="gombkocsi" src="images/kocsi.png"
+                              alt=""></button></p>
+                     <p class="ar">2000 Ft</p>
                   </div>
                </div>
                <div class="col-lg-3 col-sm-6 col-md-3">
                   <div class="box-img">
-                     <h4>Product</h4>
+                     <h4>2</h4>
                      <img src="images/product/2.png" alt="" />
+                     <p><input type="text" name="" id="2"> <button><img class="gombkocsi" src="images/kocsi.png"
+                              alt=""></button></p>
+                     <p class="ar">2000 Ft</p>
                   </div>
+
                </div>
                <div class="col-lg-3 col-sm-6 col-md-3">
                   <div class="box-img">
-                     <h4>Product</h4>
+                     <h4>3</h4>
                      <img src="images/product/4.png" alt="" />
+                     <p><input type="text" name="" id="3"> <button><img class="gombkocsi" src="images/kocsi.png"
+                              alt=""></button></p>
+                     <p class="ar">2000 Ft</p>
                   </div>
                </div>
                <div class="col-lg-3 col-sm-6 col-md-3">
                   <div class="box-img">
-                     <h4>Product</h4>
+                     <h4>4</h4>
                      <img src="images/product/5.png" alt="" />
+                     <p><input type="text" name="" id="4"> <button><img class="gombkocsi" src="images/kocsi.png"
+                              alt=""></button></p>
+                     <p class="ar">2000 Ft</p>
                   </div>
                </div>
                <div class="col-lg-3 col-sm-6 col-md-3">
                   <div class="box-img">
-                     <h4>Product</h4>
+                     <h4>5</h4>
                      <img src="images/product/10.png" alt="" />
+                     <p><input type="text" name="" id="5"> <button><img class="gombkocsi" src="images/kocsi.png"
+                              alt=""></button></p>
+                     <p class="ar">2000 Ft</p>
                   </div>
                </div>
                <div class="col-lg-3 col-sm-6 col-md-3">
                   <div class="box-img">
-                     <h4>Product</h4>
+                     <h4>6</h4>
                      <img src="images/product/11.png" alt="" />
+                     <p><input type="text" name="" id="6"> <button><img class="gombkocsi" src="images/kocsi.png"
+                              alt=""></button></p>
+                     <p class="ar">2000 Ft</p>
                   </div>
                </div>
                <div class="col-lg-3 col-sm-6 col-md-3">
                   <div class="box-img">
-                     <h4>Product</h4>
+                     <h4>7</h4>
                      <img src="images/product/12.png" alt="" />
+                     <p><input type="text" name="" id="7"> <button><img class="gombkocsi" src="images/kocsi.png"
+                              alt=""></button></p>
+                     <p class="ar">2000 Ft</p>
                   </div>
                </div>
                <div class="col-lg-3 col-sm-6 col-md-3">
                   <div class="box-img">
-                     <h4>Product</h4>
+                     <h4>8</h4>
                      <img src="images/product/13.png" alt="" />
+                     <p><input type="text" name="" id="8"> <button><img class="gombkocsi" src="images/kocsi.png"
+                              alt=""></button></p>
+                     <p class="ar">2000 Ft</p>
                   </div>
                </div>
             </div>
          </div>
       </div>
    </div>
-   <div class="cat-main-box">
-      <div class="container">
-         <div class="row panel-row">
-            <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.0s">
 
-            </div>
-            <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-
-            </div>
-            <div class="col-md-4 col-sm-6 wow fadeIn hidden-sm" data-wow-delay="0.4s">
-
-            </div>
-         </div>
-      </div>
-   </div>
-   <div class="products_exciting_box">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-               <div class="exciting_box f_pd">
-                  <p>Számlázás</p>
-               </div>
-            </div>
-            <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-               <div class="exciting_box l_pd">
-                  <p>Szállítás</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <hr>
-   <div class="fizet">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-               <div class="exciting_box f_pd">
-                  <p>Fizetés</p>
-               </div>
-            </div>
-            <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-               <div class="exciting_box l_pd">
-                  <p>Szállítási díj</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
+   
 
 
-
-
-   </footer>
-   <!--main js-->
-   <script src="js/jquery-1.12.4.min.js"></script>
-   <!--bootstrap js-->
-   <script src="js/bootstrap.min.js"></script>
-   <script src="js/bootstrap-select.min.js"></script>
-   <script src="js/slick.min.js"></script>
-   <script src="js/wow.min.js"></script>
-   <!--custom js-->
-   <script src="js/custom.js"></script>
 </body>
 
 </html>
+<!--éncsinálom js-->
+<script src="js/puzsi.js"></script>
+<!--main js-->
+<script src="js/jquery-1.12.4.min.js"></script>
+<!--bootstrap js-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/wow.min.js"></script>
+<!--custom js-->
+<script src="js/custom.js"></script>

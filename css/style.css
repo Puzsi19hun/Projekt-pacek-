@@ -33,6 +33,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
+
 /**-- font-family: 'Raleway', sans-serif; --**/
 
 
@@ -45,8 +46,12 @@ body {
 	font-weight: 400;
 	margin: 0px;
 	overflow-x: hidden;
+	
 	padding: 0px;
+	height: 100%;
 }
+
+
 
 
 h1,
@@ -70,6 +75,23 @@ h6 {
 .kocsi{
 	height: 55px;
 	margin-top: 5px;
+	cursor: pointer;
+}
+
+.gombkocsi
+{
+	height: 30px;
+}
+
+.ar{
+	font-size: 22px;
+	color: white;
+}
+
+.fizet
+{
+	background: #f4f9fd;
+	padding: 20px 0px;
 }
 
 ul,
@@ -627,9 +649,7 @@ header .navbar-default .navbar-header {
 }
 
 .box-img:hover {
-	cursor: pointer;
-	transform: scale(1.1);
-	background: #007dea;
+	
 }
 
 .food {
@@ -706,9 +726,36 @@ header .navbar-default .navbar-header {
 
 /*-- Products Exciting --*/
 
-.products_exciting_box {
-	background: #f4f9fd;
+.szallitas {
+	/* background: #f4f9fd; */
+	background: #183350;
 	padding: 20px 0px;
+	width: 800px;
+	left: 100%;
+	height: 500px;
+	position: absolute;
+	transition: 0.5s;
+	z-index: 10;
+	align-items: center;
+	top: 30%;
+	color: white;	
+	border-radius: 15px;
+}
+
+.asd .szallitas
+{
+	top: 30%;
+	width: 800px;
+	height: 500px;
+	left: 30%;
+}
+
+.bezar
+{
+	cursor: pointer;
+	margin-top: 33.5%;
+	float: right;
+	margin-right: 35%;
 }
 
 .exciting_box .icon-small {
@@ -736,16 +783,6 @@ header .navbar-default .navbar-header {
 	line-height: 30px;
 }
 
-.f_pd::after {
-	border-right: 1px solid #e2e2e2;
-	content: "";
-	background: #e2e2e2;
-	width: 1px;
-	height: 100%;
-	position: absolute;
-	right: -15px;
-	top: 0px;
-}
 
 .f_pd h4 {
 	padding-right: 109px;
