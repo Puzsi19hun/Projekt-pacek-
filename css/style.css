@@ -46,7 +46,7 @@ body {
 	font-weight: 400;
 	margin: 0px;
 	overflow-x: hidden;
-	
+
 	padding: 0px;
 	height: 100%;
 }
@@ -72,24 +72,22 @@ h6 {
 	padding: 0px;
 }
 
-.kocsi{
+.kocsi {
 	height: 55px;
 	margin-top: 5px;
 	cursor: pointer;
 }
 
-.gombkocsi
-{
+.gombkocsi {
 	height: 30px;
 }
 
-.ar{
+.ar {
 	font-size: 22px;
 	color: white;
 }
 
-.fizet
-{
+.fizet {
 	background: #f4f9fd;
 	padding: 20px 0px;
 }
@@ -648,9 +646,7 @@ header .navbar-default .navbar-header {
 	letter-spacing: 0px;
 }
 
-.box-img:hover {
-	
-}
+.box-img:hover {}
 
 .food {
 	position: absolute;
@@ -738,25 +734,41 @@ header .navbar-default .navbar-header {
 	z-index: 10;
 	align-items: center;
 	top: 30%;
-	color: white;	
+	color: white;
 	border-radius: 15px;
 }
 
-.asd .szallitas
-{
+.asd .szallitas {
 	top: 30%;
 	width: 800px;
 	height: 500px;
 	left: 30%;
 }
 
-.bezar
-{
+.bezar {
 	cursor: pointer;
 	margin-top: 33.5%;
 	float: right;
 	margin-right: 35%;
 }
+
+#db {
+
+	background: #e3e3e3;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        color: red;
+        display: inline-block;
+        font-weight: bold;
+        line-height: 40px;
+        margin-right: 5px;
+        text-align: center;
+        width: 40px;
+	
+}
+
+
 
 .exciting_box .icon-small {
 	margin-bottom: 35px;
@@ -2647,12 +2659,14 @@ html .ui-button.ui-state-disabled:active {
 }
 
 @-webkit-keyframes sk-waveStretchDelay {
+
 	0%,
 	40%,
 	100% {
 		-webkit-transform: scaleY(0.4);
 		transform: scaleY(0.4);
 	}
+
 	20% {
 		-webkit-transform: scaleY(1);
 		transform: scaleY(1);
@@ -2660,12 +2674,14 @@ html .ui-button.ui-state-disabled:active {
 }
 
 @keyframes sk-waveStretchDelay {
+
 	0%,
 	40%,
 	100% {
 		-webkit-transform: scaleY(0.4);
 		transform: scaleY(0.4);
 	}
+
 	20% {
 		-webkit-transform: scaleY(1);
 		transform: scaleY(1);
@@ -2717,7 +2733,7 @@ html .ui-button.ui-state-disabled:active {
 	/* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#000000', GradientType=0);
 	/* IE6-9 */
 	height: 180px;
 	bottom: 0px;
@@ -2963,7 +2979,7 @@ html .ui-button.ui-state-disabled:active {
 	background: -moz-linear-gradient(top, #07203e 0, #07223f 8%, #092344 14%, #072442 16%, #0a2445 16%, #082545 23%, #092648 23%, #092847 28%, #0a264b 33%, #0a2749 34%, #0b294b 34%, #0b294b 100%);
 	background: -webkit-linear-gradient(top, #07203e 0, #07223f 8%, #092344 14%, #072442 16%, #0a2445 16%, #082545 23%, #092648 23%, #092847 28%, #0a264b 33%, #0a2749 34%, #0b294b 34%, #0b294b 100%);
 	background: linear-gradient(to bottom, #07203e 0, #07223f 8%, #092344 14%, #072442 16%, #0a2445 16%, #082545 23%, #092648 23%, #092847 28%, #0a264b 33%, #0a2749 34%, #0b294b 34%, #0b294b 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07203e', endColorstr='#0b294b', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#07203e', endColorstr='#0b294b', GradientType=0);
 	padding-top: 95px;
 }
 
@@ -3372,7 +3388,7 @@ html .ui-button.ui-state-disabled:active {
 	/* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #00cb96 0%, #00be8e 100%);
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cb96', endColorstr='#00be8e', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00cb96', endColorstr='#00be8e', GradientType=0);
 	/* IE6-9 */
 	color: #fff;
 	font-size: 15px;
@@ -3441,4 +3457,3 @@ html .ui-button.ui-state-disabled:active {
 .bg_img_right img {
 	width: 100%;
 }
-
