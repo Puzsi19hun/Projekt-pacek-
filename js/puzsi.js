@@ -14,6 +14,8 @@ let numhere7 = 0
 let numhere8 = 0
 let body = document.querySelector('body');
 
+let fizethet = false
+
 let elso1 = false
 
 let openasd = document.querySelector(".kocsi")
@@ -24,21 +26,19 @@ let bezarfiz = document.querySelector(".bezar2")
 
 let egy = document.getElementsByClassName("egy").value
 
+
+
+
 openasd.addEventListener('click', () => {
     body.classList.add('asd');
 })
-
-openfiz.addEventListener('click', () => {
-    body.classList.add('asd2');
-})
-bezarfiz.addEventListener('click', () => {
-    body.classList.remove('asd2');
-})
-
-
 closeasd.addEventListener('click', () => {
     body.classList.remove('asd');
 })
+
+
+
+
 
 
 function initApp(key) {
@@ -63,6 +63,10 @@ function addToCard(key) {
 
 
 function kosarba(id) {
+    
+   
+
+    
     if (id == "egy") {
         num = Number(num) + Number(document.getElementById(1).value)
         numhere1 = Number(numhere1) + Number(document.getElementById(1).value)
@@ -159,5 +163,24 @@ function kosarba(id) {
             document.getElementById("nyolcadik").innerHTML = "Ebéd : 2000 Ft: " + numhere8 + " db, Teljes ár: " + numhere8 * 2000 + " Ft"
         }
     }
+    if (num > 0) {
+        fizethet = true
+    }
+    else {
+        fizethet = false
+    }
+
+    if (fizethet) {
+        document.getElementById("fiz").style.color="white";
+        document.getElementById("fiz").style.cursor="pointer";
+
+        openfiz.addEventListener('click', () => {
+            body.classList.add('asd2');
+        })
+    }
+    
+    bezarfiz.addEventListener('click', () => {
+        body.classList.remove('asd2');
+    })
 
 }
