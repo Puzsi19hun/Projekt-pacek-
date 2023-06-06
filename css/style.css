@@ -132,7 +132,7 @@ header .navbar {
 }
 
 #header.top-head {
-	background:#90a7c2
+	background: #90a7c2
 }
 
 header .navbar-default {
@@ -738,8 +738,7 @@ header .navbar-default .navbar-header {
 	border-radius: 15px;
 }
 
-.fiz
-{
+.fiz {
 	background: #183350;
 	padding: 20px 0px;
 	width: 800px;
@@ -754,7 +753,7 @@ header .navbar-default .navbar-header {
 	border-radius: 15px;
 }
 
-.asd .fiz {
+.asd2 .fiz {
 	top: 30%;
 	width: 800px;
 	height: 500px;
@@ -776,8 +775,16 @@ header .navbar-default .navbar-header {
 	margin-right: 35%;
 }
 
-.fizetes
-{
+.bezar2 {
+	position: absolute;
+	cursor: pointer;
+	margin-top: 12%;
+	float: right;
+	margin-right: 35%;
+
+}
+
+.fizetes {
 	cursor: pointer;
 	margin-top: 12%;
 	float: right;
@@ -787,17 +794,17 @@ header .navbar-default .navbar-header {
 #db {
 
 	background: #e3e3e3;
-        border-radius: 50%;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        color: red;
-        display: inline-block;
-        font-weight: bold;
-        line-height: 40px;
-        margin-right: 5px;
-        text-align: center;
-        width: 40px;
-	
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	color: red;
+	display: inline-block;
+	font-weight: bold;
+	line-height: 40px;
+	margin-right: 5px;
+	text-align: center;
+	width: 40px;
+
 }
 
 

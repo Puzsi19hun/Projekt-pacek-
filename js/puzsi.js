@@ -31,6 +31,9 @@ openasd.addEventListener('click', () => {
 openfiz.addEventListener('click', () => {
     body.classList.add('asd2');
 })
+bezarfiz.addEventListener('click', () => {
+    body.classList.remove('asd2');
+})
 
 
 closeasd.addEventListener('click', () => {
