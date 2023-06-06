@@ -48,6 +48,17 @@ body {
 	padding: 0px;
 }
 
+hr 
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+}
+
 h1,
 h2,
 h3,
@@ -173,7 +184,7 @@ header .navbar-default .navbar-header {
 
 .web-sh.navbar-form input::-moz-placeholder {
 	/* Firefox 19+ */
-	color #474747;
+	color: #474747;
 	opacity: 1;
 }
 
@@ -272,12 +283,7 @@ header .navbar-default .navbar-header {
 	padding: 10px 20px;
 }
 
-.top-nav ul li a {
-	color: #fff;
-	font-family: ;
-	font-size: 14px;
-	font-weight: 400;
-}
+
 
 #sidebar.active {
 	right: 100%;
