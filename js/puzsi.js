@@ -36,7 +36,7 @@ openasd.addEventListener('click', () => {
 closeasd.addEventListener('click', () => {
     body.classList.remove('asd');
 })
- 
+
 
 
 
@@ -52,7 +52,7 @@ function check() {
     }
 }
 
-function checknum(){
+function checknum() {
 
     console.log(fizethet)
     if (fizethet) {
@@ -63,7 +63,7 @@ function checknum(){
             body.classList.add('asd2');
         })
     }
-    else{
+    else {
         document.getElementById("fiz").style.color = "gray";
         document.getElementById("fiz").style.cursor = "auto";
     }
@@ -77,8 +77,10 @@ function kosarba(id) {
 
 
     if (id == "egy") {
-        num = Number(num) + Number(document.getElementById(1).value)
-        numhere1 = Number(numhere1) + Number(document.getElementById(1).value)
+        if (document.getElementById(1).value > 0) {
+            num = Number(num) + Number(document.getElementById(1).value)
+            numhere1 = Number(numhere1) + Number(document.getElementById(1).value)
+        }
         console.log(numhere1)
 
         if (document.getElementById(1).value > 0) {
@@ -93,9 +95,10 @@ function kosarba(id) {
     }
     if (id == "ketto") {
 
-
-        num = Number(num) + Number(document.getElementById(2).value)
-        numhere2 = Number(numhere2) + Number(document.getElementById(2).value)
+        if (document.getElementById(2).value > 0) {
+            num = Number(num) + Number(document.getElementById(2).value)
+            numhere2 = Number(numhere2) + Number(document.getElementById(2).value)
+        }
         console.log(numhere2)
 
         if (document.getElementById(2).value > 0) {
@@ -105,9 +108,10 @@ function kosarba(id) {
     }
     if (id == "harom") {
 
-
-        num = Number(num) + Number(document.getElementById(3).value)
-        numhere3 = Number(numhere3) + Number(document.getElementById(3).value)
+        if (document.getElementById(3).value > 0) {
+            num = Number(num) + Number(document.getElementById(3).value)
+            numhere3 = Number(numhere3) + Number(document.getElementById(3).value)
+        }
         console.log(numhere3)
         if (document.getElementById(3).value > 0) {
             document.getElementById("db").innerHTML = num
@@ -116,9 +120,10 @@ function kosarba(id) {
     }
     if (id == "negy") {
 
-
-        num = Number(num) + Number(document.getElementById(4).value)
-        numhere4 = Number(numhere4) + Number(document.getElementById(4).value)
+        if (document.getElementById(4).value > 0) {
+            num = Number(num) + Number(document.getElementById(4).value)
+            numhere4 = Number(numhere4) + Number(document.getElementById(4).value)
+        }
         console.log(numhere4)
         if (document.getElementById(4).value > 0) {
             document.getElementById("db").innerHTML = num
@@ -127,9 +132,10 @@ function kosarba(id) {
     }
     if (id == "ot") {
 
-
-        num = Number(num) + Number(document.getElementById(5).value)
-        numhere5 = Number(numhere5) + Number(document.getElementById(5).value)
+        if (document.getElementById(5).value > 0) {
+            num = Number(num) + Number(document.getElementById(5).value)
+            numhere5 = Number(numhere5) + Number(document.getElementById(5).value)
+        }
         console.log(numhere5)
         if (document.getElementById(5).value > 0) {
             document.getElementById("db").innerHTML = num
@@ -139,9 +145,11 @@ function kosarba(id) {
     }
     if (id == "hat") {
 
-
-        num = Number(num) + Number(document.getElementById(6).value)
-        numhere6 = Number(numhere6) + Number(document.getElementById(6).value)
+        if (document.getElementById(6).value > 0)
+        {
+            num = Number(num) + Number(document.getElementById(6).value)
+            numhere6 = Number(numhere6) + Number(document.getElementById(6).value)
+        }
         console.log(numhere6)
         if (document.getElementById(6).value > 0) {
             document.getElementById("db").innerHTML = num
@@ -152,8 +160,10 @@ function kosarba(id) {
     if (id == "het") {
 
 
-        num = Number(num) + Number(document.getElementById(7).value)
-        numhere7 = Number(numhere7) + Number(document.getElementById(7).value)
+        if (document.getElementById(7).value > 0) {
+            num = Number(num) + Number(document.getElementById(7).value)
+            numhere7 = Number(numhere7) + Number(document.getElementById(7).value)
+        }
         console.log(numhere7)
         if (document.getElementById(7).value > 0) {
             document.getElementById("db").innerHTML = num
@@ -233,7 +243,7 @@ function megrendel() {
 
         body.classList.remove('asd2');
         body.classList.remove('asd');
-        setTimeout(function(){ window. location. reload(); }, 900)
+        setTimeout(function () { window.location.reload(); }, 900)
 
 
 
